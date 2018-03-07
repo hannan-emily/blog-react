@@ -14,8 +14,6 @@ class Post extends Component {
       this.handleChange = this.handleChange.bind(this);
   }
 
-
-
   handleChange(e) {
     this.setState({
       body: e.target.value
@@ -50,10 +48,7 @@ class Post extends Component {
 
         <h2>{this.state.body}</h2>
 
-
-
         <input type='text' value={this.state.value} onChange={this.handleChange} />
-
 
         <h3>Comments:</h3>
         {allComments}
