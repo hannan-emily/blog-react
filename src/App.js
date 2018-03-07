@@ -5,9 +5,26 @@ import Comment from './Comment';
 import Author from './Author';
 
 class Post extends Component {
+
+  constructor(props) {
+      super()
+      this.state = {
+        body: props.body
+      }
+      this.handleChange = this.handleChange.bind(this);
+  }
+
+
+
+  handleChange(e) {
+    this.setState({
+      body: e.target.value
+    })
+  }
+
   render() {
 
-    const {title, author, body, comments, authors} = this.props
+    const {title, author, body, comments, authors } = this.props
 
     let allComments = [
       <Comment ragnor={comments[0]}/>,
@@ -31,7 +48,13 @@ class Post extends Component {
 
         </header>
 
-        <h2>{body}</h2>
+        <h2>{this.state.body}</h2>
+
+
+
+        <input type='text' value={this.state.value} onChange={this.handleChange} />
+
+
         <h3>Comments:</h3>
         {allComments}
 
