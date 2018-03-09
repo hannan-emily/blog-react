@@ -64,10 +64,10 @@ nav > a {
 }
 
 .header-text{
-  font-size: 75px;
+  font-size: 95px;
   position: absolute;
   top: 10%;
-  right: 50%;
+  right: 45%;
   z-index: 5;
 }
 
