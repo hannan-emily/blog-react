@@ -6,7 +6,7 @@ import Author from './Author';
 class Post extends Component {
 
   constructor(props) {
-      super()
+      super(props)
       this.state = {
         body: props.body
       }
