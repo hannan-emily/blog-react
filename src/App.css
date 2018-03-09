@@ -55,18 +55,19 @@ nav > a {
   margin-top: 2%;
 }
 
-.headerText{
+.header-text{
   font-size: 75px;
   position: absolute;
+  top: 10%;
   right: 40%;
   z-index: 5;
 }
 
-h3.headerText {
-  font-size: 50px;
+h3.header-text {
+  font-size: 60px;
   position: absolute;
   text-align: left;
-  right: 65%;
+  right: 55%;
   z-index: 5;
 }
 
