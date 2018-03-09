@@ -38,7 +38,9 @@ class Post extends Component {
 
     return (
       <div className="Post">
-        <header>
+        <img className="image3" src="https://images.pexels.com/photos/461769/pexels-photo-461769.jpeg" />
+
+        <header class="body-text">
           <h1>{title}</h1>
           <h4>Written by:</h4>
           {allAuthors}
@@ -51,6 +53,8 @@ class Post extends Component {
 
         <h3>Comments:</h3>
         {allComments}
+
+
 
       </div>
     );

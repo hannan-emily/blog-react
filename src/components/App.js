@@ -15,7 +15,7 @@ var post = {
   title: 'Dinosaurs Are Extra-Awesome',
 
   author: 'boaty mcboatface',
-  body: 'Boy, was Ragnor vicious!',
+  body: 'Boy, was Ragnorn vicious!',
   authors: [
     "Finnegan Swarty",
     "Andoliza Swanson",
@@ -35,12 +35,12 @@ class App extends Component {
     return(
       <Router>
         <div>
-          <nav>
-            <Link to='/'>Home</Link>{' '}
-            <Link to='/about'>About</Link>{' '}
-            <Link to='/post'>Post</Link>{' '}
-            <Link to='/favoritefood'>Favorite Food</Link>{' '}
-            <Link to='/favoritemovie'>Favorite Movie</Link>{' '}
+          <nav className="nav">
+            <Link class-="link" to='/'>Home</Link>{' '}
+            <Link class-="link" to='/about'>About</Link>{' '}
+            <Link class-="link" to='/post'>Blog</Link>{' '}
+            <Link class-="link" to='/favoritefood'>Favorite Food</Link>{' '}
+            <Link class-="link" to='/favoritemovie'>Favorite Movie</Link>{' '}
           </nav>
 
           <Route exact path='/' component={Home} />
