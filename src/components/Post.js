@@ -38,7 +38,7 @@ class Post extends Component {
 
     return (
       <div className="Post">
-        <img className="image3" src="https://images.pexels.com/photos/461769/pexels-photo-461769.jpeg" />
+        <img alt="" className="image3" src="https://images.pexels.com/photos/461769/pexels-photo-461769.jpeg" />
 
         <header class="body-text">
           <h1>{title}</h1>

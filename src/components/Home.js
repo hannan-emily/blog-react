@@ -20,15 +20,15 @@ class Home extends Component {
     //the url for our api
     let poemApi = 'http://shakeitspeare.com/api/poem'
 
-    //our fetch of that poemApi url, which was saved to a let variable
+    //our fetch of that Api url, which was saved to a let variable
     //fetch() is a self-closing function. '.then' is called right after it finishes
     //we want to return JSON using the callback method
-    // fetch(poemApi)
+    // fetch(Api)
     //   .then((response) => {
     //     return response.json()
     //   })
     //   .then((farge) => {
-    //     base.setState({ shakespeare: farge.poem })
+    //     base.setState({ shakespeare: farge. })
     //   })
     //   .catch((error) => {
     //     console.log('an error occured when parsing!', error)
@@ -37,6 +37,7 @@ class Home extends Component {
     axios.get(poemApi)
     .then((response) => {
       base.setState({shakespeare: response.data.poem})
+      console.log(response);
     })
     .catch((error) => {
       console.log('an error occured during json parse', error)
@@ -67,7 +68,7 @@ class Home extends Component {
         <div className="container">
           <h1 className="header-text">An Otter's Life</h1>
           <p className="header-p">{poetry}</p>
-          <img className="image" src="https://burst.shopifycdn.com/photos/green-meets-desert.jpg" />
+          <img alt="" className="image" src="https://burst.shopifycdn.com/photos/green-meets-desert.jpg" />
         </div>
       )
 

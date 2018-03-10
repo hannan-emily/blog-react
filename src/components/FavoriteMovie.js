@@ -10,7 +10,7 @@ class FavoriteMovie extends Component {
 
           <div className="container">
             <h3 className="header-text">Nellie's Favorite Movie</h3>
-            <img className="image" src="https://i.kinja-img.com/gawker-media/image/upload/s--GMHj49uC--/c_scale,fl_progressive,q_80,w_800/vz65vzpofmu2jxapgdgh.jpg" />
+            <img alt="" className="image" src="https://i.kinja-img.com/gawker-media/image/upload/s--GMHj49uC--/c_scale,fl_progressive,q_80,w_800/vz65vzpofmu2jxapgdgh.jpg" />
           </div>
         </div>
       </div>
